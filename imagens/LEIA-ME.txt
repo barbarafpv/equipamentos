@@ -1,0 +1,12 @@
+Coloque aqui as fotos dos equipamentos, com EXATAMENTE estes nomes:
+
+  notebook-acer-nitro-5.webp
+  meta-quest-2.webp
+  dji-mini-4-pro.webp
+  blackmagic-pocket-6k.webp
+
+Dicas:
+- A área da foto é quadrada; fotos verticais ou quadradas funcionam bem.
+- Tamanho ideal: até ~300 KB por foto (use https://squoosh.app para comprimir).
+- Se quiser outro nome ou formato (.png, .webp), mude o campo "foto" em produtos.js (ex.: .jpg).
+Enquanto a foto não existir, a página mostra um espaço reservado "Foto em breve".
