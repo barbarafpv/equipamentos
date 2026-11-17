@@ -3,6 +3,7 @@
   const grid = document.getElementById("grid");
   const brl = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
 
+  const wa = (msg) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
   const placeholder = `
@@ -42,9 +43,15 @@
             <p class="price"><small>Preço</small>${preco}</p>
             ${botao}
           </div>
+          ${p.vendido ? "" : `<a class="wa-link" href="${esc(wa(`Olá! Tenho interesse no ${p.nome} (${preco}). Ainda está disponível?`))}"
+               target="_blank" rel="noopener noreferrer">Perguntar no WhatsApp</a>`}
         </div>
       </article>`;
   }).join("");
+
+  // Links gerais de WhatsApp (topo, rodapé e botão flutuante)
+  document.querySelectorAll(".js-wa").forEach((a) => { a.href = wa("Olá! Vi a vitrine de equipamentos e tenho interesse."); });
+  document.querySelectorAll(".js-wa-num").forEach((s) => { s.textContent = WHATSAPP_EXIBICAO; });
 
   // SEO: dados estruturados dos produtos
   const ld = {

@@ -10,6 +10,10 @@
    • Para adicionar, copie um bloco, cole abaixo e ajuste.
    ============================================================ */
 
+/* WhatsApp para contato: código do país (55) + DDD + número, só dígitos. */
+const WHATSAPP = "5531984484397";
+const WHATSAPP_EXIBICAO = "(31) 98448-4397";
+
 const PRODUTOS = [
   {
     categoria: "Tecnologia",

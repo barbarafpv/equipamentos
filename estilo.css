@@ -217,6 +217,47 @@ main { padding-top: clamp(40px, 7vw, 80px); padding-bottom: 40px; }
 .btn:focus-visible, .scroll-cue:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
 .btn-off { background: #2a2a2e; color: var(--muted); cursor: not-allowed; box-shadow: none !important; }
 
+/* ===== WhatsApp ===== */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.wa-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 20px;
+  font-size: 14px; font-weight: 700; text-decoration: none;
+  color: #111; background: var(--text);
+  border-radius: 999px;
+  transition: background .3s var(--ease), color .3s var(--ease);
+  animation: rise .9s var(--ease) .36s both;
+}
+.wa-cta svg { width: 18px; height: 18px; color: #1faa53; }
+.wa-cta:hover { background: var(--orange); }
+.wa-cta:hover svg { color: #111; }
+.wa-cta:focus-visible, .wa-float:focus-visible, .wa-link:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+
+.wa-link {
+  align-self: flex-start;
+  margin-top: 14px;
+  font-size: 13px; font-weight: 600;
+  color: var(--muted);
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #3a3a40;
+  transition: color .3s var(--ease), text-decoration-color .3s var(--ease);
+}
+.wa-link:hover { color: var(--orange); text-decoration-color: var(--orange); }
+
+.wa-float {
+  position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 10;
+  display: grid; place-items: center;
+  width: 56px; height: 56px;
+  color: #fff; background: #1faa53;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px -8px rgba(0,0,0,.7);
+  transition: transform .3s var(--ease);
+}
+.wa-float svg { width: 28px; height: 28px; }
+.wa-float:hover { transform: scale(1.06); }
+
+.note a { text-decoration: none; }
+.note a strong { color: var(--orange); }
+
 .note {
   margin: clamp(40px, 6vw, 70px) auto 0;
   max-width: 640px;
@@ -235,6 +276,7 @@ main { padding-top: clamp(40px, 7vw, 80px); padding-bottom: 40px; }
 @media (max-width: 760px) {
   .grid { grid-template-columns: 1fr; }
   .foot { flex-direction: column; align-items: stretch; }
+  .footer .wrap { padding-right: 90px; }
   .btn { width: 100%; font-size: 12px; letter-spacing: .04em; padding: 14px 16px; }
 }
 
