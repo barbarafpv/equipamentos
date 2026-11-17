@@ -231,17 +231,13 @@ main { padding-top: clamp(40px, 7vw, 80px); padding-bottom: 40px; }
 .wa-cta svg { width: 18px; height: 18px; color: #1faa53; }
 .wa-cta:hover { background: var(--orange); }
 .wa-cta:hover svg { color: #111; }
-.wa-cta:focus-visible, .wa-float:focus-visible, .wa-link:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+.wa-cta:focus-visible, .wa-float:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
 
-.wa-link {
-  align-self: flex-start;
-  margin-top: 14px;
-  font-size: 13px; font-weight: 600;
-  color: var(--muted);
-  text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #3a3a40;
-  transition: color .3s var(--ease), text-decoration-color .3s var(--ease);
-}
-.wa-link:hover { color: var(--orange); text-decoration-color: var(--orange); }
+.actions { display: flex; flex-direction: column; gap: 10px; }
+.btn-wa { background: #1faa53; color: #fff; }
+.btn-wa .wa-ico { width: 18px; height: 18px; }
+.btn-wa:hover { background: #23c25f; box-shadow: 0 10px 30px -10px rgba(31,170,83,.7); }
+.btn-wa:hover svg { transform: none; }
 
 .wa-float {
   position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 10;
