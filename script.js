@@ -15,7 +15,8 @@
       <span>Foto em breve</span>
     </div>`;
 
-  grid.innerHTML = PRODUTOS.map((p, i) => {
+  const lista = [...PRODUTOS].sort((a, b) => a.vendido - b.vendido); // vendidos vão para o fim
+  grid.innerHTML = lista.map((p, i) => {
     const preco = brl.format(p.preco).replace(/ /g, " ");
     const chips = (p.destaques || []).map((d) => `<li>${esc(d)}</li>`).join("");
     const desc = p.descricao ? `<p class="desc">${esc(p.descricao)}</p>` : "";

@@ -23,7 +23,7 @@ const PRODUTOS = [
     preco: 2800,
     foto: "imagens/notebook-acer-nitro-5.webp",
     link: "https://produto.mercadolivre.com.br/MLB-7965419058-notebook-acer-nitro-5-an515-51-16gb-preto-_JM",
-    vendido: false,
+    vendido: true,
   },
   {
     categoria: "Realidade virtual",
