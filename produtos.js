@@ -50,7 +50,7 @@ const PRODUTOS = [
     nome: "Blackmagic Pocket Cinema Camera 6K + Cage Tilta",
     destaques: ["Montagem EF", "Com nota fiscal"],
     descricao: "Revisada recentemente em assistência técnica autorizada, com nota fiscal.",
-    preco: 9000,
+    preco: 8960,
     foto: "imagens/blackmagic-pocket-6k.webp",
     link: "https://produto.mercadolivre.com.br/MLB-5534471601-cmera-blackmagic-pocket-cinema-6k-ef-cage-tilta-preto-_JM",
     vendido: false,
