@@ -17,16 +17,6 @@ const WHATSAPP_EXIBICAO = "(31) 98448-4397";
 
 const PRODUTOS = [
   {
-    categoria: "Drones",
-    nome: "Drone DJI Mini 4 Pro Standard",
-    destaques: ["Controle DJI RC-N2", "Usado conservado"],
-    descricao: "",
-    preco: 4500,
-    foto: "imagens/dji-mini-4-pro.webp",
-    link: "https://www.mercadolivre.com.br/drone-dji-mini-4-pro-dji-rcn2-sem-tela-usado-conservado/up/MLBU5859908168?pdp_filters=item_id%3AMLB7965247196",
-    vendido: false,
-  },
-  {
     categoria: "Audiovisual",
     nome: "Blackmagic Pocket Cinema Camera 6K + Cage Tilta",
     destaques: ["Montagem EF", "Com nota fiscal"],
@@ -54,6 +44,16 @@ const PRODUTOS = [
     preco: 2800,
     foto: "imagens/notebook-acer-nitro-5.webp",
     link: "https://produto.mercadolivre.com.br/MLB-7965419058-notebook-acer-nitro-5-an515-51-16gb-preto-_JM",
+    vendido: true,
+  },
+  {
+    categoria: "Drones",
+    nome: "Drone DJI Mini 4 Pro Standard",
+    destaques: ["Controle DJI RC-N2", "Usado conservado"],
+    descricao: "",
+    preco: 4500,
+    foto: "imagens/dji-mini-4-pro.webp",
+    link: "https://www.mercadolivre.com.br/drone-dji-mini-4-pro-dji-rcn2-sem-tela-usado-conservado/up/MLBU5859908168?pdp_filters=item_id%3AMLB7965247196",
     vendido: true,
   },
 ];
